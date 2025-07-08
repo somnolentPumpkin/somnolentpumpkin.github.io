@@ -1,0 +1,45 @@
+title: "Wricken"
+email: contact@wricken.com
+description: >-
+  A writer's blog and creative portfolio.
+baseurl: "" # leave empty unless your site is under a subpath
+url: "https://wricken.com" # change to your custom domain or GitHub Pages URL
+
+# Theme
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# Header navigation order
+header_pages:
+  - index.md
+  - blog/index.md
+  - portfolio/index.md
+
+# Portfolio collection
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:name/
+
+include:
+  - _includes/head-custom.html
+
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: page
+      permalink: /portfolio/:name/

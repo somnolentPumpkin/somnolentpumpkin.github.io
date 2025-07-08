@@ -1,0 +1,164 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  a {
+    color: #80cbc4;
+  }
+
+  a:hover {
+    color: #b2dfdb;
+  }
+
+  header.site-header,
+  footer.site-footer {
+    background-color: #1e1e1e;
+    border-color: #333;
+  }
+
+  .site-title,
+  .site-title:visited,
+  .site-nav .page-link {
+    color: #ffffff !important;
+  }
+
+  .site-nav .page-link:hover {
+    color: #b2dfdb !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+
+  .post-meta,
+  .post-meta a {
+    color: #aaa;
+  }
+
+  code, pre, .highlight {
+    background-color: #2e2e2e;
+    color: #f8f8f2;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.page-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  border-bottom: 3px solid #90caf9; /* subtle accent underline */
+  padding-bottom: 0.5rem;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.post-preview {
+  background-color: var(--content-bg, #222); /* use a subtle card background */
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.post-preview:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+.post-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.post-title a {
+  text-decoration: none;
+  color: var(--link-color, #90caf9);
+}
+
+.post-title a:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: #bbb;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.post-excerpt {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.portfolio-item {
+  background-color: var(--content-bg, #222);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.7);
+}
+
+.portfolio-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.portfolio-item h3 a {
+  color: var(--link-color, #90caf9);
+  text-decoration: none;
+}
+
+.portfolio-item h3 a:hover {
+  text-decoration: underline;
+}
+
+.portfolio-item p {
+  color: #ccc;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin: 0;
+}
