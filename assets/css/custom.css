@@ -2,14 +2,13 @@
   body {
     background-color: #121212;
     color: #e0e0e0;
-  }
-
-  a {
-    color: #80cbc4;
+    line-height: 1.6;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
   }
 
   a:hover {
-    color: #b2dfdb;
+    color: #dfb2d2db;
   }
 
   header.site-header,
@@ -25,11 +24,14 @@
   }
 
   .site-nav .page-link:hover {
-    color: #b2dfdb !important;
+    color: #dfb2d2db !important;
   }
 
   h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
+      font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .post-meta,
@@ -57,7 +59,7 @@
   font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: 700;
-  border-bottom: 3px solid #90caf9; /* subtle accent underline */
+  border-bottom: 3px solid #ca90f9; /* subtle accent underline */
   padding-bottom: 0.5rem;
 }
 
@@ -86,7 +88,7 @@
 
 .post-title a {
   text-decoration: none;
-  color: var(--link-color, #90caf9);
+  color: var(--link-color, #ca90f9);
 }
 
 .post-title a:hover {
@@ -148,7 +150,7 @@
 }
 
 .portfolio-item h3 a {
-  color: var(--link-color, #90caf9);
+  color: var(--link-color, #ca90f9);
   text-decoration: none;
 }
 
@@ -165,4 +167,82 @@
 
 a {
   color: #ca90f9 !important;
+}
+
+@media (max-width: 768px) {
+  /* The dropdown menu that appears */
+  .site-nav .trigger {
+    background-color: #121212 !important;
+    color: #eee !important;
+    padding: 1rem;
+  }
+
+  .site-nav .trigger a {
+    color: #ca90f9 !important;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  .site-nav .trigger a:hover {
+    text-decoration: underline;
+  }
+
+  /* Hamburger icon background fix */
+  .menu-icon {
+    background-color: transparent !important;
+  }
+
+  .menu-icon svg {
+    fill: #ca90f9 !important;
+  }
+
+  /* Optional: Make the nav bar itself dark too */
+  .site-nav {
+    background-color: #121212 !important;
+  }
+}
+
+
+hr {
+  margin: 10px 0px;
+}
+
+.latest-post {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-left: 4px solid #ca90f9;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.latest-post h3 {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  font-size: 1.3rem;
+}
+
+.latest-post h3 a {
+  color: #ca90f9;
+  text-decoration: none;
+}
+
+.latest-post h3 a:hover {
+  text-decoration: underline;
+}
+
+.latest-post .post-date {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.latest-post p {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.latest-post a {
+  color: #ca90f9;
 }
